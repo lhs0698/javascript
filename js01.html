@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 연습장</title>
+</head>
+
+<body>
+    <h2 id="hello"></h2>
+    <h2 id="hi"></h2>
+    <script>
+        document.getElementById("hello").innerHTML = "안녕하세요";
+        document.getElementById("hello").style.color = "red";
+        document.getElementById("hi").innerHTML = '안녕';
+        document.getElementById('hi').style.fontSize = '16px'
+
+// document.getElementById("hello").innerHTML = "<div style='color:red'>안녕하세요</div>";
+// document.getElementById('hi').innerText = "<div style='color: red'>안녕하세요</div>";
+
+// innerHTML과 innerText의 차이점
+// innerText = element.innerText에 html을 포함한 문자열을 입력하면, html코드가 문자열 그대로 element안에 포함됩니다.
+// innterHTML = element.innerHTML 속성에 html코드를 입력하면,html element가 element안에 포함되게 됩니다.
+
+    </script>
+</body>
+
+</html>

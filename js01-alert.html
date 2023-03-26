@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alertBox</title>
+    <link rel="stylesheet" href="css/js01-alert.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">알림창
+        <button onclick="alertBox('none')">닫기</button>
+    </div>
+    <button onclick="alertBox('block')">열기</button>
+    <script>
+
+        // 파라미터 문법 사용
+        // 함수를 한개로 해결 하고 싶을때 사용
+        function alertBox(event) {
+            console.log(event)
+            document.getElementById('alert').style.display = event
+        }
+
+        // function openAlert() {
+        //     document.getElementById('alert').style.display = 'block';
+        // }
+
+        // function closeAlert() {
+        //     document.getElementById('alert').style.display = 'none';
+        // }
+    </script>
+</body>
+</html>
+
+<!-- 긴 코드를 축약하고 싶을 때 사용 -->
+<!-- 샐렉터 오타 주의 -->
+<!--  -->
