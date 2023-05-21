@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>setTimeout</title>
+</head>
+
+<body>
+
+    <div style="background-color: bisque;" class="alert alert-danger"><span id="num">5</span>초 이내 꺼지기</div>
+
+    <script>
+        // x초 후 실행 시키고 싶을 때
+        // setTimeout(function () {
+        //     $('.alert').hide(); 
+        // }, 5000)
+
+        // x초 마다 실행시키고 싶을 때는 setInterval을 사용한다
+        // setInterval(function () {
+        //     console.log('안녕')
+        // }, 2000)
+
+        // 콜백 함수 자리에는 만들어준 함수를 넣어줄 수 있다
+        // setTimeout(Timer,2000);
+
+        // function Timer() {
+        //     console.log('timer')
+        // }
+
+        // 5초 count가 다 된 후 div삭제하기
+        var count = 5;
+
+        setInterval(function Timer() {
+            count -= 1;
+            if(count >= 0) {
+                document.querySelector('#num').innerHTML = count;
+            } else {
+                $('.alert').hide();
+            }
+        },1000)
+
+    </script>
+</body>
+
+</html>
